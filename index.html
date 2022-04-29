@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clarusway Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Clarusway Survey Form</h1>
+      <p>Thank you for taking the time to help us improve the platform.</p>
+
+    <div id="container">
+      
+      <form action="./result.html" method="GET" target="_blank">
+        <div class="input">
+          <label for="name">Name</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="input">
+          <label for="surname">Surname</label>
+          <br />
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Enter your surname"
+            required
+          />
+        </div>
+
+        <div class="input">
+          <label for="email">E-mail</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="user@clarusway.com"
+            required
+          />
+        </div>
+
+        <div class="first-select">
+          <label for="select"
+            >Which option best describes your current role?</label
+          >
+          <br />
+          <select name="first-select" id="first-dropdown">
+            <option value="select-current-role" disabled selected>
+              Select current role
+            </option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="part-time-job">Part Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+          </select>
+        </div>
+
+        <div class="radio">
+            <label for="friend">Would you recommend Clarusway to a friend?</label>
+            <br>
+            <input type="radio" name="friend" id="first-radio">
+            <label for="first-radio">Definitely, Yes</label>
+            <br>
+            <input type="radio" name="friend" id="second-radio" checked>
+            <label for="second-radio">Maybe</label>
+            <br>
+            <input type="radio" name="friend" id="third-radio">
+            <label for="third-radio">Not sure</label>
+            <br>
+            <input type="radio" name="friend" id="forth-radio">
+            <label for="forth-radio">Definitely, No</label>
+        </div>
+
+        <div id="second-select">
+            <label for="second-select">What is your favorite feature of Clarusway?</label>
+            <br>
+
+            <select name="second-select" id="second-dropdown">
+                <option value="select-an-option" disabled selected>Select an option</option>
+                  <option value="courses">Courses</option>
+                  <option value="projects">Projects</option>
+                  <option value="community">Community</option>
+                  <option value="mentors">Mentors</option>
+            </select>
+        </div>
+
+        <div class="check">
+            <label for="check">What would you like to see improved? (Check all that apply)</label>
+            <br>
+            <input type="checkbox" name="check" id="first-check" value="Front-End-Projects" checked>
+            <label for="first-check">Front-End Projects</label>
+            <br>
+            <input type="checkbox" 
+            name="check" 
+            id="second-check" 
+            value="Front-End-Projects">
+            <label for="second-check">Back-End Projects</label>
+            <br>
+            <input type="checkbox" 
+            name="check" 
+            id="third-check" 
+            value="Front-End-Projects">
+            <label for="third-check">Data Science</label>
+            <br>
+            <input type="checkbox" 
+            name="check" 
+            id="forth-check" 
+            value="Front-End-Projects">
+            <label for="forth-check">Additional Courses</label>
+            <br>
+        </div>
+
+        <div class="question">
+          <label for="question">Any comments or suggestions?</label>
+          <br>
+          <textarea name="question" id="question" cols="5" placeholder="Enter your comment here... Thanks for your commets..."></textarea>
+        </div>
+
+        <div class="submit">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

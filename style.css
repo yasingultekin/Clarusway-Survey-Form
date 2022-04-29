@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    margin: 20px;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    margin: 20px 0 20px;
+    font-size: 1.2rem;
+}
+
+#name, #surname, #email, #dropdown, 
+#question, #first-dropdown {
+    width: 170px;
+    padding: 5px;
+    margin: 15px 0 15px 0;
+}
+
+#first-check, #second-check,
+#third-check, #forth-check,
+#first-radio, #second-radio,
+#third-radio, #forth-radio, #second-dropdown {
+    margin: 15px 0;
+}
+
+textarea {
+    resize: none;
+    font-size: 0.7rem;
+
+}
+    
+button {
+    margin-left: 50px;
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+}
