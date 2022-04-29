@@ -22,7 +22,7 @@ p {
 }
 
 #name, #surname, #email, #dropdown, 
-#question, #first-dropdown {
+#question, #first-dropdown, #second-dropdown {
     width: 170px;
     padding: 5px;
     margin: 15px 0 15px 0;
@@ -34,11 +34,9 @@ p {
 #third-radio, #forth-radio, #second-dropdown {
     margin: 15px 0;
 }
-
 textarea {
     resize: none;
     font-size: 0.7rem;
-
 }
     
 button {
